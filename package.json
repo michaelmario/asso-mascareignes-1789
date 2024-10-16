@@ -3,13 +3,39 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "webpack serve --open --mode=development",
+    "progress": "webpack --mode=production --progress",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "json:server": "json-server  data/jsonPage-db.json",
+    "production": "vue-cli-service build && firebase deploy"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "@unhead/vue": "^1.11.7",
+    "aos": "^2.3.4",
+    "axios": "^1.7.7",
+    "bootstrap": "5.3",
+    "clean-webpack-plugin": "^4.0.0",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "css-minimizer-webpack-plugin": "^7.0.0",
+    "file-loader": "^6.2.0",
+    "firebaseui": "^4.8.0",
+    "firebase": "^8.10.0",
+    "html-webpack-plugin": "^5.6.0",
+    "json-server": "^1.0.0-beta.3",
+    "mini-css-extract-plugin": "^2.9.1",
+    "moment": "^2.30.1",
+    "pinia": "^2.2.4",
+    "register-service-worker": "^1.7.2",
+    "style-loader": "^4.0.0",
+    "sweetalert2": "^11.14.1",
+    "vue": "^3.2.13",
+    "vue-material-design-icons": "^5.3.0",
+    "vue-meta": "^2.4.0",
+    "vue-router": "^4.4.5",
+    "vue3-google-map": "^0.21.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -18,7 +44,8 @@
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3"
+    "eslint-plugin-vue": "^8.0.3",
+    "webpack-cli": "^5.1.4"
   },
   "eslintConfig": {
     "root": true,

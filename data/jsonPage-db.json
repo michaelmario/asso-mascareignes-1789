@@ -1,0 +1,42 @@
+{
+   "portfolio":[
+    { 
+    "id": 1,
+    "content":"Découvrez les œuvres captivantes exposées à la galerie « The Artbox ». Plongez dans l’univers fascinant créatif de nos artistes talentueux et laissez-vous emporter par la beauté remarquable et époustouflante de leurs créations. Venez-nous rendre visite à la galerie « The Artbox » et faites l’expérience inoubliable d’une immersion totale dans l’univers captivant de l’art.",
+    "excerpt":"Découvrez les œuvres captivantes exposées à la galerie « The Artbox ». Plongez dans l’univers fascinant créatif de nos artistes talentueux et laissez-vous emporter par la beauté remarquable",
+    "image": "",
+    "name": "ArtBox",
+    "url": "https://github.com/michaelmario/the-Artbox",
+    "Posttime": "mario / août 7, 2024"
+    },
+    { 
+    "id": 2,
+    "content":"Plus de 30 ans d’expérience dans le secteur font de Studio Pasubio une entreprise solide capable de satisfaire toutes les demandes des clients,rapidement et avec les meilleures solutions personnalisées. Pour garantir l’exclusivité de chaque proposition d’ameublement et de finition dans chaque environnement.",
+    "excerpt":"Plus de 30 ans d’expérience dans le secteur font de Studio Pasubio une entreprise solide capable de satisfaire toutes les demandes des clients, rapidement.",
+    "image": "",
+    "name": "MobilPlus",
+    "url": "https://pasubio-23b28.web.app/",
+    "Posttime": "mario / août 7, 2024"
+    },
+    { 
+    "id": 3,
+    "content":"Site “mobile first” qui répertorie les menus de restaurants astronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée. Finis, les temps d’attente au restaurant !.",
+    "excerpt":"Site “mobile first” qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu",
+    "image": "",
+    "name": "Ohmyfood",
+    "url": "https://github.com/michaelmario/the-Artbox",
+    "Posttime": "mario / août 7, 2024"
+    },
+    { 
+    "id": 4,
+    "content":"Bienvenue sur le site de l’association AGAME, une initiative solidaire dédiée à la prolongation de la vie des appareils informatiques et à l’insertion professionnelle. AGAME récupère gratuitement du matériel informatique inutilisé auprès des particuliers et des entreprises pour les réparer et les redistribuer à ceux qui en ont besoin. En s’engageant dans le réemploi solidaire, l’association contribue à la réduction des déchets électroniques tout en créant des opportunités d’emploi pour les jeunes chômeurs. Depuis son intégration au mouvement Emmaüs, AGAME continue de renforcer son impact social et environnemental en soutenant les familles et en promouvant une économie circulaire durable .",
+    "excerpt":"Site de l’association AGAME, une initiative solidaire dédiée à la prolongation de la vie des appareils informatiques et à l’insertion professionnelle.",
+    "image": "",
+    "name": "Agame",
+    "url": "https://github.com/michaelmario/the-Artbox",
+    "Posttime": "mario / août 7, 2024"
+    }
+    
+]
+}
+
