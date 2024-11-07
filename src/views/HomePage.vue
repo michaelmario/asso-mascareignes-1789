@@ -1,73 +1,95 @@
 <template>
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-                aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+   <div class="container">
+   <div class="bgprimary-dark">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="intro-text">
+                        <h1 class="text-center mt-3 text-light">
+                            Mascareignes 1789 Nous aidons les associations à renforcer leur
+                            service numérique, sur la base du volontariat.</h1>
+                    </div>
+                    <div class="container text-center my-3">
+                        <RouterLink to="/contact" type="button" class="btn btn-outline-light mx-3">Contactez-nous</RouterLink>
+                        <RouterLink to="/realisation" type="button" class="btn btn-outline-light mx-3">Nos modèles &
+                            Portfolio</RouterLink>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="bg-img bg-img-1">
+                                </div>
+
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h2 class="text-center text-light">Accroître la visibilité</h2>
+                                        <h2 class="text-center text-light">de votre association et atteindre un public
+                                            plus large </h2>
+                                        <p>Responsables d'associations, boostez la visibilité de votre association avec
+                                            un site web
+                                            professionnel,<br> Contactez nous dès aujourd'hui pour un devis gratuit et
+                                            donnez à votre
+                                            association la visibilité qu'elle mérite ! </p>
+                                        <p><router-link to="/contact" class="text-center btn btn-lg btn-primary"
+                                                href="/contact">Contact</router-link></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="bg-img bg-img-2">
+                                </div>
+
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h2 class="text-center text-light">Communiquer efficacement </h2>
+                                        <h2 class="text-center text-light">sur vos activités et actualités </h2>
+                                        <p>
+                                            Notre équipe de développeurs web spécialisés dans la création de sites pour
+                                            associations est
+                                            là pour vous accompagner.
+                                            Nous créons des sites web efficaces,personnalisés et optimisés pour vos
+                                            besoins spécifiques
+                                        </p>
+                                        <p><router-link to="/contact" class="text-center btn btn-lg btn-primary"
+                                                href="/contact">Contact</router-link></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="bg-img bg-img-3">
+                                </div>
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h2 class="text-center text-light">Un site web constitue une vitrine</h2>
+                                        <h2 class="text-center text-light">Accessible 24 heures sur 24 et 7 jours sur 7.
+                                        </h2>
+                                        <p>Cela permet à toute personne intéressée de découvrir vos activités, vos
+                                            valeurs et vos
+                                            objectifs sans avoir à se déplacer </p>
+                                        <p><router-link to="/contact" class="text-center btn btn-lg btn-primary"
+                                                href="/contact">Contact</router-link></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://firebasestorage.googleapis.com/v0/b/creation-digital/o/images%2Ffirst.webp?alt=media&token=53ccdec4-61b9-44a9-a116-acf0cab41752"
-                    alt="happy-whoman" class="img-fluid">
-
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1 class="text-center text-light">Accroître la visibilité</h1>
-                        <h2 class="text-center text-light">de votre association et atteindre un public plus large </h2>
-                        <p>Responsables d'associations, boostez la visibilité de votre association avec un site web
-                            professionnel,<br> Contactez nous dès aujourd'hui pour un devis gratuit et donnez à votre
-                            association la visibilité qu'elle mérite ! </p>
-                        <p><router-link to="/contact" class="text-center btn btn-lg btn-primary"
-                                href="/contact">Contact</router-link></p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://firebasestorage.googleapis.com/v0/b/creation-digital/o/images%2Fsecond.webp?alt=media&token=443f5572-23e2-4e18-b687-682961a5371f"
-                    alt="people-learn-digital" class="img-fluid">
-
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1 class="text-center text-light">Communiquer efficacement </h1>
-                        <h2 class="text-center text-light">sur vos activités et actualités </h2>
-                        <p>
-                            Notre équipe de développeurs web spécialisés dans la création de sites pour associations est
-                            là pour vous accompagner.
-                            Nous créons des sites web efficaces,personnalisés et optimisés pour vos besoins spécifiques
-                        </p>
-                        <p><router-link to="/contact" class="text-center btn btn-lg btn-primary"
-                                href="/contact">Contact</router-link></p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://firebasestorage.googleapis.com/v0/b/creation-digital/o/images%2Fthird.webp?alt=media&token=83f39d50-3d7e-4541-b00b-99b05ba7859c"
-                    alt="brain-storming for e commerce" class="img-fluid">
-
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1 class="text-center text-light">Un site web constitue une vitrine</h1>
-                        <h2 class="text-center text-light">Accessible 24 heures sur 24 et 7 jours sur 7.</h2>
-                        <p>Cela permet à toute personne intéressée de découvrir vos activités, vos valeurs et vos
-                            objectifs sans avoir à se déplacer </p>
-                        <p><router-link to="/contact" class="text-center btn btn-lg btn-primary"
-                                href="/contact">Contact</router-link></p>
-                    </div>
-                </div>
-            </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-
-    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -80,8 +102,11 @@
                             alt="logoImg">
                     </div>
                     <ul class="mx-3 my-5 firstUL">
-                        <li><strong>L‘association Mascareigne-1789</strong> est un acteur clé de notre quartier
-                            Oeuvrant pour le bien-être de tous. Elle s’articule autour de trois axes principaux :</li>
+                        <li>
+                            <strong>L‘association Mascareigne-1789</strong> 
+                            est une association qui a pour vocation d'être l'acteur incontournable de notre quartier œuvrant pour le bien-être de tous.
+                            Elle s'articule autour de trois axes principaux :                            
+                            </li>
                     </ul>
                 </div>
                 <hr>
@@ -264,10 +289,14 @@
                 </div>
             </div>
         </div>
-    </div>
+    <transition name="fade">
+        <button  class="back-top  btn-block back-top--show bottom-0" aria-label="Retourner en haut de la page" @click="backToTop" v-show="scY > 300">
+            <i class="bi bi-chevron-up"></i>
+        </button>
+    </transition>
+</div>
     <section class="container-fluid justify-content-center my-5">
-        <img src="https://firebasestorage.googleapis.com/v0/b/creation-digital/o/images%2Fdigital-divide-1.webp?alt=media&token=921588f0-cf82-4220-b9d5-7db324377982"
-            alt="" class="img-fluid" id="secImg">
+        <div id="bgsection"></div>
     </section>
     <div class="container mt-5">
         <div class="row">
@@ -530,7 +559,8 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <img src="https://firebasestorage.googleapis.com/v0/b/creation-digital/o/images%2Flearntocode.webp?alt=media&token=dc04df3a-b160-4ec1-89a8-8e67818758bf"
-                                    alt="jeune handicapé apprendre l'informatique" class="img-fluid" data-aos="fade-right" aos-duration="10000">
+                                    alt="jeune handicapé apprendre l'informatique" class="img-fluid"
+                                    data-aos="fade-right" aos-duration="10000">
                             </div>
                             <div class="col-md-6">
                                 <h3>Luttons contre la fracture numérique</h3>
@@ -561,67 +591,43 @@
             </div>
         </div>
     </div>
-   <!-- <section class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <h3 class="text-center py-5">Nos Partenaire </h3>
-                <div id="news-slider" class="slide" >
-                    <div class="card-group my-5" >
-                   <div class="col-md-4 my-5" v-for="(quote, index) in quotes" :key="index">
-                    <div class="card h-100 mx-2 post-slide">
-                        <div class="card-img-top post-img">
-                            <img :src="quote.img"    :alt="quote.name" class="img-fluid imgSlide">
-                            <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-                        </div>
-                        <div class="card-body post-content">
-                            <h5 class="card-title post-title">
-                                <a href="#">{{ quote.author }}</a>
-                            </h5>
-                            <p class="card-text post-description">
-                               {{ quote.text }} </p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-between align-items-center">
-                            <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
-                            <a href="#" class="read-more">read more</a>
-                        </div>
-                    </div>                       
-                     </div> 
-                    </div>
-                     <div class="my-5 py-5 text-center">
-                      <button @click="prevQuote" class="prev btn btn-light">Previous</button>
-                        <button @click="nextQuote" class="next btn btn-light">Next</button>
-                    </div>
-            </div>
-        </div>
-        </div>
-    </section>-->
+    <section class="container-fluid">
+    </section>
+    
+   
 </template>
 <script>
+// import axios from 'axios'
 export default {
     data() {
         return {
             quotes: [
-                { 
-                    text: "L’Agame.re vous répare vos appareils informatiques pour prolonger leur vie et leurs usages. L’insertion de ses salariés par l’activité économique et la formation.<br> Et ils encouragent le Recyclage des appareiles informatique.",
+                {
+                    text: "L’Agame.re, répare vos appareils informatiques pour prolonger leur vie et leurs usages. L’insertion de ses salariés par l’activité économique et la formation. Et ils encouragent le Recyclage des appareiles informatique.",
                     author: "Agame.re",
-                    img:'https://firebasestorage.googleapis.com/v0/b/creation-digital/o/images%2Fagame.webp?alt=media&token=5d020e18-f0cc-401d-b69f-dadfa2a377d2',
-                    name:'agame.re'
+                    img: 'https://firebasestorage.googleapis.com/v0/b/creation-digital/o/images%2Fagame.webp?alt=media&token=5d020e18-f0cc-401d-b69f-dadfa2a377d2',
+                    name: 'agame.re',
+                    date: 'Out 03, 2022',
+                    link: 'https://agame.re/'
                 },
-                 
-                { text: "Do what you can, with what you have, where you are.", author: "Theodore Roosevelt", img:'https://images.unsplash.com/photo-1564979268369-42032c5ca998?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=500' },
-                { text: "Success is not final, failure is not fatal: It is the courage to continue that counts.", author: "Winston Churchill", img:'https://images.unsplash.com/photo-1576659531892-0f4991fca82b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501' }
+
+                { text: "Do what you can, with what you have, where you are.", author: "Theodore Roosevelt", img: 'https://images.unsplash.com/photo-1564979268369-42032c5ca998?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=500' },
+                { text: "Success is not final, failure is not fatal: It is the courage to continue that counts.", author: "Winston Churchill", img: 'https://images.unsplash.com/photo-1576659531892-0f4991fca82b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501' }
             ],
-            currentQuoteIndex:0,
+            currentQuoteIndex: 0,
             interval: null,
+            scTimer: 0,
+            scY: 0,
+
 
         }
     },
     head: {
-        title: 'Asso-Mascareignes-1789,',
+        title: 'Asso-M-1789,Accueil',
         meta: [
             {
                 name: 'description',
-                content: "Notre association aide les association  à renforcer leur présence en ligne grâce à des sites web, et gestion des réseaux sociaux."
+                content: "Mascarignes-1789, votre partenaire au Port pour maîtriser le numérique. Formations adaptées pour les habitants et associations locales. Inscrivez-vous dès maintenant !"
             },
             {
                 name: "keyword",
@@ -653,24 +659,76 @@ export default {
         },
         nextQuote() {
             this.currentQuoteIndex = (this.currentQuoteIndex + 1) % this.quotes.length;
-            },
+        },
         prevQuote() {
             this.currentQuoteIndex =
                 (this.currentQuoteIndex - 1 + this.quotes.length) % this.quotes.length;
         },
+        getAssoData() {
+            //  { method: 'GET',
+            // headers: { accept: 'application/json','Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+            // 'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token',
+            // 'Access-Control-Allow-Origin': '*',
+            // 'x-rapidapi-key': '81ee3e4158mshdbb91311c9a28eep1f313djsn9e675f82de1a' } };
+            const options ={method: 'GET',
+                            headers: {accept: 'application/json',
+                                      'Access-Control-Allow-Origin': '*',
+                                      authorization: 'Bearer:',
+                                      "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5Njk2MGU1ZDc1MWM0MTcyZjlhYjA4ZGNmMzE3MGRhZCIsInVycyI6Ik9yZ2FuaXphdGlvbkFkbWluIiwiY3BzIjpbIkFjY2Vzc1B1YmxpY0RhdGEiLCJBY2Nlc3NUcmFuc2FjdGlvbnMiLCJDaGVja291dCJdLCJuYmYiOjE3Mjk2NjQ2OTEsImV4cCI6MTcyOTY2NjQ5MSwiaXNzIjoiaHR0cHM6Ly9hcGkuaGVsbG9hc3NvLXNhbmRib3guY29tIiwiYXVkIjoiOTcyMDZmNmYyYzRmNGYwN2IwMzlkZTQ2ZWFiOTZhZTAifQ.nbOSFToCi-8QoFetM74cpNZCRf-nE56eut8UIzph9pxfKnjwSNO53AjPt17zK3nhlmJY1b184hSMeJW4WdrhMSH6rQK-duLp6E-4KkEdPAvFDMvcycHXw78mtj4iB0xUhePmuGJDjssGOr68RDma4Uqif0ZEmB-b_0NFLR83nmapvTn1B60zEP0k9vzl34f9MVwbDijyI6kNtZQIZexw6h3qGzMVq6iAx49sn7to-JWHAPKbfJn0OkuBJy4PBgJLdVe_JiNexlfOzW-93WeIGaRWOP-OjbIUCGFogHg3lKpCXsc0-0G6uzBFMMBQf9pWSk-x40VDdXONUXPrVbJDTQ",
+                                      'Content-Type': 'application/x-www-form-urlencoded',
+                                      'client_id': '97206f6f2c4f4f07b039de46eab96ae0',
+                                      'client_secret': 't6RM7xQylH18FJWHXYtXYRy+y/dIj+YT',
+                                      'grant_type':'client_credentials',
+                                    }}
+                                   
+            fetch('https://api.helloasso.com/v5/swagger', options)
+                .then(response => response.json())
+                .then(response => console.log(response))
+                .catch(err => console.error(err));
+        },
+        beforeUnmount() {
+            clearInterval(this.interval);
+        },
+        handleScroll() {
+        if (this.scTimer) return;
+        this.scTimer = setTimeout(() => {
+          this.scY = window.scrollY;
+          clearTimeout(this.scTimer);
+          this.scTimer = 0;
+        }, 100);
+      },
+      backToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      },
+        
     },
-    beforeUnmount() {
-        clearInterval(this.interval);
+    computed: {
+        currentQuote() {
+            return this.quotes[
+                this.currentQuoteIndex
+            ];
+        },
     },
-
     mounted() {
-         this.startSlider();
+        // this.startSlider();
+        // this.getAssoData();
+        window.addEventListener('scroll', this.handleScroll);
     },
 }
 </script>
 <style scoped>
+.carousel {
+    position: relative;
+    margin-top: 70px;
+}
 .carousel-caption>h1 h2 {
     font-size: 20px;
+}
+.carousel-caption{
+    bottom: 5.25rem; 
 }
 
 .link-item {
@@ -691,7 +749,7 @@ export default {
     border-radius: 15px;
     padding-top: 1px;
     box-shadow: 0px 14px 22px -9px #bbcbd8;
-   
+
 }
 
 .post-slide .post-img {
@@ -699,9 +757,10 @@ export default {
     overflow: hidden;
 
 }
+
 .post-slide .post-img img {
     width: 100%;
-    height:auto;
+    height: auto;
     transform: scale(1, 1);
     transition: transform 0.2s linear;
 }
@@ -774,7 +833,7 @@ export default {
     color: #cfdace;
 }
 
-.post-slide .read-more {
+.read-more {
     padding: 7px 20px;
     float: right;
     font-size: 12px;
@@ -783,6 +842,9 @@ export default {
     box-shadow: 0px 10px 20px -10px #1376c5;
     border-radius: 25px;
     text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
 }
 
 .post-slide .read-more:hover {
@@ -829,6 +891,29 @@ export default {
 .owl-controls .owl-buttons .owl-next:after {
     content: "\f105";
 }
+.intro-text>h1 {
+   text-align: center;
+    padding-top: 20%;
+    font-size: 30px;
+
+}
+.intro-text>h2 {
+    font-size:20px;
+}
+
+#bgsection{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/creation-digital/o/images%2Fdigital-divide-1.webp?alt=media&token=921588f0-cf82-4220-b9d5-7db324377982');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: white;
+               
+}
+
 
 @media only screen and (max-width: 1280px) {
     .post-slide .post-content {
@@ -853,6 +938,36 @@ export default {
     .carousel-item>img {
         top: -66px;
     }
+}
+.bgprimary-dark {
+    background: linear-gradient(94deg, rgba(81, 112, 255, 1) 39%, #244061 60%) ! important;
+    width:100%;
+    height:auto;
+    margin:100px auto;
+}
+
+/*  */
+
+.bg-img {
+    text-align: center;
+    padding-top: 130px;
+    width: 100% !important;
+    height: 50vh;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+
+}
+
+.bg-img-1 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.391), rgba(0, 0, 0, 0.391)), url('https://firebasestorage.googleapis.com/v0/b/creation-digital/o/images%2Ffirst.webp?alt=media&token=53ccdec4-61b9-44a9-a116-acf0cab41752');
+}
+
+.bg-img-2 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.391), rgba(0, 0, 0, 0.391)), url('https://firebasestorage.googleapis.com/v0/b/creation-digital/o/images%2Fsecond.webp?alt=media&token=443f5572-23e2-4e18-b687-682961a5371f');
+}
+
+.bg-img-3 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.391), rgba(0, 0, 0, 0.391)), url('https://firebasestorage.googleapis.com/v0/b/creation-digital/o/images%2Fthird.webp?alt=media&token=83f39d50-3d7e-4541-b00b-99b05ba7859c');
 }
 
 @media(max-width:320px) {

@@ -11,14 +11,7 @@
 
       </div>
       <div class="col-md-4">
-        <img :src="datas.image" alt="image">
-        <ul class="d-flex justify-content-between" >
-          <li v-for="reactions in datas.reactions" :key="reactions.id">{{ reactions}}</li>
-          
-        </ul>
-        <ul class="d-flex justify-content-between">
-          <li v-for="tags in datas.tags" :key="tags.id">{{ tags }}</li>
-        </ul>
+        <img :src="datas.image" alt="image">            
       </div>
     </div>
   </div>
@@ -47,8 +40,17 @@ export default {
     this.readmediaPOST();
   },
 
-  head: {
-    title: 'My awesome site'
+  head(){
+    return{
+         title:this.datas.title,
+         meta: [
+      {
+        name: 'description',
+        content: this.datas.excerpt,
+      },
+    ]   
+    }
+    
   }
 };
 </script>

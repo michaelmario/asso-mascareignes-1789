@@ -55,7 +55,7 @@ export const useUserStore = defineStore('userStore', {
               
               deleteUser(id){
                 return usersCollection.doc(id).delete()
-              }
-             
-    }
+              },
+           
+       }
 })

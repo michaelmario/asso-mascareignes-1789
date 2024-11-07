@@ -17,17 +17,16 @@
                                     <img src="https://firebasestorage.googleapis.com/v0/b/creation-digital/o/images%2FLogo-mascareigne-1789-2.png?alt=media&token=ce1a7a5e-379e-45b9-9ca2-317293a44108"
                                         alt="logo" class="logo-inverse">
                                 </a>
-                                <!-- theme switch -->
+                                <!-- theme switch 
                                 <div class="form-check form-switch theme-switch d-none">
                                     <input class="form-check-input" type="checkbox" role="switch"
                                         id="flexSwitchCheckDefault">
                                     <label class="form-check-label" for="flexSwitchCheckDefault"></label>
-                                </div>
+                                </div>-->
                             </div>
                             <div>
-                                <h1 class="display-4 fw-bold my-5">Contactez Asso-Mascareignes-1789</h1>
-                                <p>Pour bénéficier d'une assistance spécialisée pour votre projet internet. bénéficier
-                                    d'une assistance personnalisée</p>
+                                <h1 class="fw-bold my-5">Asso-Mascareignes-1789</h1>
+                                <p>Pour bénéficier d'une assistance spécialisée pour votre projet internet</p>
                                 <p class="lead text-dark">Remplissez le formulaire à droite pour entrer en contact avec
                                     un membre de notre équipe et nous vous contacterons sous peu.</p>
                                 <div class="mt-8 fs-4">
@@ -83,7 +82,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="position-absolute bottom-0 m-4 ms-0">
+                        <!-- <div class="position-absolute bottom-0 m-4 ms-0">
                             <div class="dropdown">
                                 <button class="btn btn-light btn-icon rounded-circle d-flex align-items-center"
                                     type="button" aria-expanded="false" data-bs-toggle="dropdown"
@@ -115,7 +114,7 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <!-- background color -->
                     <div
@@ -124,7 +123,7 @@
                             <!-- form section -->
                             <div class="container-fluid  text-white py-5 rounded">
                                 <!-- form row -->
-                                <form class="row needs-validation" @submit.prevent="getFormData" id="getFormData">
+                                <form class="row needs-validation"  id="getFormData">
                                     <!-- form group -->
                                     <div class="mb-3 col-12 col-md-6">
                                         <label class="form-label" for="contactFistName">
@@ -202,8 +201,8 @@
                                     </div>
                                     <!-- button -->
                                     <div class="col-12">
-                                        <button type="submit" id="contactButton"
-                                            class="btn btn-primary w-100">Envoyer</button>
+                                        <button type="button" id="contactButton"
+                                            class="btn btn-primary w-100" @click.prevent="getFormData">Envoyer</button>
                                     </div>
                                 </form>
                             </div>
@@ -304,7 +303,7 @@ export default {
         },
     },
     head: {
-        title: 'Asso-Mascareignes-1789, Nous contactez',
+        title: 'M-1789, Nous contactez',
         meta: [
             {
                 name: 'description',

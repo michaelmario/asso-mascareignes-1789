@@ -20,10 +20,15 @@
                             <li v-for="reactions in post.reactions" :key="reactions.id">
                                 {{ reactions }}</li>
                         </ul>
-                        <ul class="d-flex justify-content-between">
-                            <li v-for="tags in post.tags" :key="tags.id">{{ tags }}</li>
-                        </ul>
-                    </div>
+                   
+                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                        <i class="bi bi-star-fill text-warning pe-1"></i>
+                           
+                        </div>
+                       
                 </div>
             </div>
         </div>

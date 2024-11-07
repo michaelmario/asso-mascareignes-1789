@@ -2,10 +2,10 @@
     <header id="header" class="fixed-top">
         <div class="navbar  navbar-expand-lg navbar-light">
             <div class="container">
-                <a href="#" class="navbar-brand text-uppercase">
+                <router-link to="/" class="navbar-brand text-uppercase">
                     <img src="https://firebasestorage.googleapis.com/v0/b/creation-digital/o/images%2FLogo-mascareigne-1789-2.png?alt=media&token=ce1a7a5e-379e-45b9-9ca2-317293a44108" id="logo" class="img fluid pt-1 mx-5 "
                         alt="logo-mascareignes-1789">
-                </a>
+                </router-link>
                 <button type="button" class="navbar-toggler bg-primary text-white  mx-3"  aria-label="UP button" title="UP button" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse" id="navbarButton">
                     <span class="navbar-toggler-icon text-white"></span>

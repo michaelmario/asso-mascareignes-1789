@@ -1,13 +1,12 @@
-<template>
-  <div>
+<template>  
     <form>
-      <div class="form-floating mb-3">
+      <div class="form-floating mb-3">        
         <input class="form-control" v-model="username" id="inputusername" type="text" placeholder="Prénom"
           autocomplete="off" />
         <label for="inputusername">Prénom</label>
       </div>
       <div class="form-floating mb-3">
-        <input class="form-control" v-model="email" id="inputEmail" type="email" placeholder="name@example.com" />
+        <input class="form-control" v-model="email" id="inputEmail" type="email" placeholder="name@example.com"  autocomplete="off" />
         <label for="inputEmail">Email</label>
       </div>
       <div class="form-floating mb-3">
@@ -15,16 +14,15 @@
         <label for="inputPassword">Password</label>
       </div>
       <div class="form-floating mb-3">
-        <input class="form-control" v-model="confirmPassword" id="inputConfirmPassword" type="password"
-          placeholder="Confirm Password" />
         <label for="inputConfirmPassword">Confirm Password</label>
+        <input class="form-control" v-model="confirmPassword" id="inputConfirmPassword" type="password"
+          placeholder="Confirm Password" />         
       </div>
-      <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-        <router-link class="small" to="/admindPage">Déjà inscrit?</router-link>
-        <button class="btn btn-primary" type="button" @click="register">S'inscrire</button>
-      </div>
-    </form>
-  </div>
+         <div class="form-floating my-3">
+          <button class="btn btn-primary" type="submit" @click.prevent="register">S'inscrire</button> 
+         </div>   
+    </form> 
+    
 </template>
 
 <script>
@@ -32,7 +30,7 @@ import { auth, db } from '@/firebase';
 import Swal from "sweetalert2";
 const Toast = Swal.mixin({
     toast: true,
-    position: "center",
+    position: "top",
     showConfirmButton: false,
     timer: 4000,
     timerProgressBar: true,

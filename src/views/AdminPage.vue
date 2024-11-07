@@ -10,11 +10,7 @@
                                     <div class="card-body">
                                        <AdminComponent></AdminComponent>
                                     </div>
-                                    <div class="card-footer text-center py-3">
-                                        <div class="small">
-                                            <RouterLink to="/registerPage">Besoin d'un compte ? Inscrivez-vous!</RouterLink>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -33,6 +29,34 @@ export default {
   components: {
     AdminComponent,
   },
+  head: {
+        title: 'M-1789, Connexion',
+        meta: [
+            {
+                name: 'description',
+                content:"Notre mission est d'œuvrer pour réduire cette fracture en facilitant l'accès à des services informatiques et l'utilisation des outils numériques pour tous."
+            },
+            {
+                name: "keyword",
+                content: "Fracture numérique, inclusion numérique, accès aux technologies pour tous,Faciliter l'accès aux nouvelles technologies, technologie pour tous, démocratisation du numérique"
+            },
+            {
+                name: "author",
+                content: "Achille Michael Mario"
+            },
+            {
+                name: "copyright",
+                content: "asso-mascareignes-1789.com 2024"
+            },
+            {
+                name: "language",
+                content: "fr"
+            }
+
+
+        ]
+
+    }
 };
 </script>
 <style scoped>

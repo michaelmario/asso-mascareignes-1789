@@ -11,6 +11,8 @@ import 'vue-material-design-icons/styles.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import '@/register-service-worker';
+// import 'owl.carousel/dist/assets/owl.carousel.css';
+// import 'owl.carousel';
 // import * as VueGoogleMaps from 'vue2-google-maps'
 
 

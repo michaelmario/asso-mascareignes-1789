@@ -92,13 +92,7 @@ const routes = [
         component:UserFormation
       },
     ]
-  },
-  // {
-  //   path:"/courses",
-  //   name:"courses",
-  //   component:CoursesPage
-  // },
-
+  },  
   {
     path:'/ml&pc',
     name:'ml&pc',
@@ -135,6 +129,10 @@ const routes = [
 const router = createRouter({
   // base: process.env.BASE_URL,
   history: createWebHistory(),
+  scrollBehavior: () => ({ y: 0 }),
+  linkActiveClass: "active",
+  linkExactActiveClass: "active",
+  fallback: false,
   routes,
 })
 

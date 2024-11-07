@@ -86,7 +86,7 @@
 <script>
 export default {
     head: {
-        title: 'Asso-Mascareignes-1789, A Propos',
+        title: 'M-1789, A Propos',
         meta: [
             {
                 name: 'description',

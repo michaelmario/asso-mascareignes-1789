@@ -14,8 +14,14 @@
                     <ul class="text-center" data-aos="fade-right" data-aos-duration="1000">
                         <li>Avenue 14 juillet 1789</li>
                         <li>Résidence Mascarine</li>
-                        <li>0693041147</li>
-                        <li>marioachil@gmail.com</li>
+                        <li >
+                            <i class="bi bi-telephone-inbound mx-3"></i>
+                            <a href="tel:0693041147" class="text-white text-decoration-none">0693041147</a>
+                        </li>
+                        
+                        <li>
+                            <i class="bi bi-envelope mx-3"></i>
+                            <a href="mailto:maraioachil@gmail.com" class="text-white text-decoration-none">marioachil@gmail.com</a></li>
                     </ul>
 
                 </div>

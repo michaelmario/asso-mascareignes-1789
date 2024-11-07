@@ -1,5 +1,6 @@
 <template>
-  <div class="container my-5">
+    <transition >
+  <div class="container my-5" ref="container">
     <div class="logoBoxImg">
     <img src="https://firebasestorage.googleapis.com/v0/b/creation-digital/o/images%2Fcropped-Logo-mascareigne-1789-300x300.webp?alt=media&token=0719a6e8-3091-4c6e-83b8-a9c781bf3d6b" alt="logo" class="img-fluid mx-auto d-block">
     </div>
@@ -100,12 +101,8 @@
     <li>- Moteurs de recherche</li>
     <li>- Organismes de presse</li>
     <li>- Distributeurs d'annuaires en ligne</li>
+
 </ul>
-
-
-
-
-
 <p>Ces organisations peuvent créer un lien vers notre page d'accueil, vers des publications ou vers d'autres informations du site</p>
      tant que le lien : 
      <ul>
@@ -180,15 +177,25 @@
 <p>En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction aux tribunaux
      compétents de Saint-Denis.</p>
 </div>
+</transition>
 </template>
 
 <script>
-
 export default {
   name: 'Ml&PcPage',
+data() {
+    return {
+     
+    };
+  },
+  props: {
+
+  },
   components: {
     
   },
+  
+ 
 };
 </script>
 
